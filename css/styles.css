@@ -1,0 +1,129 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    list-style: none; 
+    text-decoration: none; 
+    box-sizing: border-box; 
+}
+
+/* style for the header */
+header{
+    min-height: 100px;
+    height: 100%; 
+}
+
+/* styles for the nav bar text */
+ul{
+    float: right; 
+    list-style-type: none; 
+    margin-top: 30px; 
+    min-height: 400px; 
+    margin-right: 60px;
+    font-size: 17px; 
+    color: #000000;
+}
+
+ul li{
+    display: inline-block; 
+}
+ 
+ul li a{
+    text-decoration: none; 
+    color: black; 
+    padding: 5px 20px;
+    border: 1px solid transparent; 
+    transition: 0.5 ease;  
+}
+
+/* when hover the text in the nav bar  */
+ul li a:hover{
+    background-color: #E6C744;
+    color: white; 
+}
+
+/* change style for the logo */
+.logo img{
+    float: left;
+    width: 150px; 
+    height: auto; 
+}
+
+/* put the max-width and the margin for the nav bar */
+.main{
+    max-width: 1200px; 
+    margin: auto;
+}
+
+/* style for the button */
+.button{
+    background-color: black; 
+    text-align: center;
+    display: inline-block;
+    margin: 4px 2px;
+    padding: 10px 24px; 
+    border: 2px solid transparent;
+    border-radius: 8px;
+    margin-left: auto; 
+}
+
+.btn{
+    color: #ffffff;
+    transition: 0.5 ease; 
+    font-size: 17px;
+    margin-left: auto;
+}
+
+/* when the button is hovered  */
+.button:hover{
+    background-color: #E6C744;
+}
+
+/* style for the content */
+.content{
+    width: 1200px; 
+    height: auto; 
+    margin: auto; 
+    background-color: #E7E6E6;
+    position: relative; 
+    border: 2px solid transparent; 
+    border-radius: 20px; 
+    line-height: 50px;
+    padding-left: 50px;
+    margin-top: 20px;
+}
+
+/* target in the text in the content */
+.content .h1 .span{
+    color: black; 
+    font-size: 96px;  
+    font-family:'Poppins', sans-serif;
+}
+
+/* target the sentence in the content */
+.content .par{
+    padding-left: 0px; 
+    padding-bottom: 25px; 
+    letter-spacing: 1.2px; 
+    line-height: 30px; 
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* target the button in the content  */
+.content .cn{
+    width: 80px; 
+    height: 40px; 
+    border: 2px solid transparent;
+    border-radius: 4px; 
+    background-color: black; 
+    margin-bottom: 20px; 
+}
+
+
+
+ 
+
