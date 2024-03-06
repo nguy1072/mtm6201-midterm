@@ -4,69 +4,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fashion Website</title>
-
-    <!-- google font link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- css file link -->
+    <link rel="stylesheet" href="<link rel=" stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />"
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/reset.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Fashion Website</title>
 </head>
-<!-- body of the landing website -->
+
+<!-- the body starts here -->
+
 <body>
-    <!-- here is the start of the HEADER section -->
-    <header>
-        <div class="main">
-            <dir class="logo">
-                <img src="/images/logoandtext.png">
-            </dir>
-            <ul>
-                <li><a href="#catalogue">CATALOGUE</a></li>
-                <li><a href="#fashion">FASHION</a></li>
-                <li><a href="#favorite">FAVORITE</a></li>
-                <li><a href="#lifestyle">LIFESTYLE</a></li>
-            </ul>
+    <!-- the nav bar starts here -->
+    <nav class="navbar">
+        <!-- the logo -->
+        <div class="logo">
+            <img src="/images/logoandtext.png">
         </div>
+        <!-- the menu -->
+        <ul class="menu">
+            <li><a href="" class="active">CATALOGUE</a></li>
+            <li><a href="">FASHION</a></li>
+            <li><a href="">FAVOURITE</a></li>
+            <li><a href="">LIFESTYLE</a></li>
+            <button class="navbar-btn">Sign Up</button>
+        </ul>
+    </nav>
 
-        <!-- Sign Up button in the nav bar -->
-        <div class="button">
-            <a href="#" class="btn">SIGN UP</a>
-        </div>
-
-        <!-- here is the start of the CONTENT section -->
-        <div class="content">
-            <!-- Break the text of the content into each line -->
-            <h1>LET'S<br>
-                <span>EXPLORE</span><br>
-                <span>UNIQUE</span><br>
-                <span>CLOTHES.</span><br>
-                <!-- The sentence after the breaking text -->
-                <span class="par">Live for Influential and Innovative fashion!</span><br>
-                <!-- Call to action Shop Now button -->
-                <button class="cn"><a href="#">Shop Now</a></button>
-        </div>
-        
-
-
-
-    </header>
-
-
-
-
-
-    <!-- header section ends -->
-
-
-
-
-
-
-
+    <!-- the banner starts here -->
+    <section class="content">
+        <!-- left columns start here -->
+        <div class="left-column">
+            <div class="top">
+                <h1><span>LET'S</span></h1><br>
+                <h1><span>EXPLORE</span></h1><br>
+                <h1><span>UNIQUE</span></h1><br>
+                <h1><span>CLOTHES.</span></h1><br>
+                <p><span>Live for Influential and Innovative fashion!</span></p><br>
+            </div>
+            <!-- the reactangle in the left side of the Shop Now button -->
+            <div class="bottom">
+                <div class="rectangle">
+                    <img src="/images/rectangle.png">
+                </div>
+                <a href="" class="btn">SHOP NOW</a>
+                <!-- right column starts here -->
+                <div class="right-column">
+                    <img src="images/banner.png">
+                </div>
+            </div>
+    </section>
 
 
 </body>
