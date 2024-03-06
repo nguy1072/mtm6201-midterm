@@ -1,129 +1,147 @@
-
 *{
     margin: 0;
     padding: 0;
-    font-family: "Poppins", sans-serif;
-    list-style: none; 
-    text-decoration: none; 
-    box-sizing: border-box; 
-}
-
-/* style for the header */
-header{
-    min-height: 100px;
-    height: 100%; 
-}
-
-/* styles for the nav bar text */
-ul{
-    float: right; 
-    list-style-type: none; 
-    margin-top: 30px; 
-    min-height: 400px; 
-    margin-right: 60px;
-    font-size: 17px; 
+    font-family: "Poppins", sans-serif; 
+  }
+  
+  /*  style for the body starts here */
+  body{
+    height: 100%;
+  }
+  
+  /* style for the header */
+  /* the menu button */
+  .menu-btn{
     color: #000000;
-}
-
-ul li{
-    display: inline-block; 
-}
- 
-ul li a{
-    text-decoration: none; 
-    color: black; 
-    padding: 5px 20px;
-    border: 1px solid transparent; 
-    transition: 0.5 ease;  
-}
-
-/* when hover the text in the nav bar  */
-ul li a:hover{
-    background-color: #E6C744;
-    color: white; 
-}
-
-/* change style for the logo */
-.logo img{
-    float: left;
-    width: 150px; 
-    height: auto; 
-}
-
-/* put the max-width and the margin for the nav bar */
-.main{
-    max-width: 1200px; 
-    margin: auto;
-}
-
-/* style for the button */
-.button{
-    background-color: black; 
-    text-align: center;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  /* the nav bar */
+  .navbar{
+    padding: 20px 5%; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky; 
+    z-index: 999;
+    background-color: #ffffff;
+    box-shadow: 0 0 14px rgba(0,0,0,0.3);
+  }
+     
+  /* change the list into the same line with the logo */
+  .navbar .menu li{
+    list-style: none; 
     display: inline-block;
-    margin: 4px 2px;
-    padding: 10px 24px; 
-    border: 2px solid transparent;
-    border-radius: 8px;
-    margin-left: auto; 
-}
-
-.btn{
+  }
+  
+  /* style for the list in the nav bar */
+  .navbar .menu li a{
+    display: block;
+    margin-left: 20px; 
+    color: #000000;
+    border-bottom: 4px solid transparent;
+    text-decoration: none; 
+    font-size: 16px; 
+    font-family: "Poppins", sans-serif; 
+    font-weight: regular; 
+    margin-right: 20px; 
+  }
+  
+  .button{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #000000;
     color: #ffffff;
-    transition: 0.5 ease; 
-    font-size: 17px;
-    margin-left: auto;
-}
-
-/* when the button is hovered  */
-.button:hover{
-    background-color: #E6C744;
-}
-
-/* style for the content */
-.content{
-    width: 1200px; 
-    height: auto; 
-    margin: auto; 
-    background-color: #E7E6E6;
-    position: relative; 
-    border: 2px solid transparent; 
-    border-radius: 20px; 
-    line-height: 50px;
-    padding-left: 50px;
-    margin-top: 20px;
-}
-
-/* target in the text in the content */
-.content .h1 .span{
-    color: black; 
-    font-size: 96px;  
-    font-family:'Poppins', sans-serif;
-}
-
-/* target the sentence in the content */
-.content .par{
-    padding-left: 0px; 
-    padding-bottom: 25px; 
-    letter-spacing: 1.2px; 
-    line-height: 30px; 
+  }
+  
+  /* create a style for the Sign Up button  */
+  .navbar-btn{
+    border-radius: 4px;
+    background-color: black;
+    color: white; 
+    padding: 10px 20px;
     font-size: 16px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
+  }
+  
+  .navbar .menu li a:hover{
+    border-bottom: 4px solid #000000; 
+  }
+  /* CONTENT */
+  /* the padding for the body content  */
+  section {
+    padding: 1rem 9%;
+  }
 
-/* target the button in the content  */
-.content .cn{
-    width: 80px; 
-    height: 40px; 
-    border: 2px solid transparent;
-    border-radius: 4px; 
-    background-color: black; 
+  .content {
+    display: flex;
+    align-items: stretch;
+  }
+  
+  .left-column {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .top {
+    text-align: left; 
     margin-bottom: 20px; 
 }
 
+.bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.btn {
+    margin-left: 20px;
+}
 
- 
+.rectangle {
+    margin-right: 20px; 
+}
 
+.right-column {
+    flex: 1;
+    display: flex;
+    align-items: center; 
+}
+
+.right-column img {
+    width: 50%;
+    height: auto;
+}
+
+  .content h1{
+    font-size: 40px; 
+  }
+  
+  .content p{
+    font-size: 20px; 
+    margin-top: 20px;
+  }
+  
+  .content .btn{
+    margin-top: 30px;
+    padding: 15px 30px;
+    border: none;
+    background-color: black;
+    color: white; 
+    font-size: 20px; 
+    border-radius: 5px; 
+  }
+  
+  
