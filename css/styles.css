@@ -1,147 +1,58 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: "Poppins", sans-serif; 
-  }
-  
-  /*  style for the body starts here */
-  body{
-    height: 100%;
-  }
-  
-  /* style for the header */
-  /* the menu button */
-  .menu-btn{
-    color: #000000;
-    font-size: 23px;
-    cursor: pointer;
-    display: none;
-  }
-  
-  /* the nav bar */
-  .navbar{
-    padding: 20px 5%; 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky; 
-    z-index: 999;
-    background-color: #ffffff;
-    box-shadow: 0 0 14px rgba(0,0,0,0.3);
-  }
-     
-  /* change the list into the same line with the logo */
-  .navbar .menu li{
-    list-style: none; 
-    display: inline-block;
-  }
-  
-  /* style for the list in the nav bar */
-  .navbar .menu li a{
-    display: block;
-    margin-left: 20px; 
-    color: #000000;
-    border-bottom: 4px solid transparent;
-    text-decoration: none; 
-    font-size: 16px; 
-    font-family: "Poppins", sans-serif; 
-    font-weight: regular; 
-    margin-right: 20px; 
-  }
-  
-  .button{
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-    padding: 10px 20px;
-    height: 100%;
-    width: 100%;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    background: #000000;
-    color: #ffffff;
-  }
-  
-  /* create a style for the Sign Up button  */
-  .navbar-btn{
-    border-radius: 4px;
-    background-color: black;
-    color: white; 
-    padding: 10px 20px;
-    font-size: 16px;
-  }
-  
-  .navbar .menu li a:hover{
-    border-bottom: 4px solid #000000; 
-  }
-  /* CONTENT */
-  /* the padding for the body content  */
-  section {
-    padding: 1rem 9%;
-  }
+/* HEADER STARTS */
 
-  .content {
-    display: flex;
-    align-items: stretch;
-  }
-  
-  .left-column {
-    flex: 1;
-    padding: 10px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  .top {
-    text-align: left; 
-    margin-bottom: 20px; 
+.header{
+margin-left: 5rem;
+margin-right:5rem;
 }
 
-.bottom {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.header .container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
-.btn {
-    margin-left: 20px;
+.header .container .menu{
+  display: flex;
+  flex-direction: row;
+  gap: 6rem;
+  align-items: center;
 }
 
-.rectangle {
-    margin-right: 20px; 
+.header .container .menu a{
+  color: black;
+  font-size: 1.25rem;
+  font-weight: 400;
 }
 
-.right-column {
-    flex: 1;
-    display: flex;
-    align-items: center; 
+.header-logo{
+  height: 4.75rem;
 }
 
-.right-column img {
-    width: 50%;
-    height: auto;
-}
+/* HEADER ENDS */
 
-  .content h1{
-    font-size: 40px; 
-  }
-  
-  .content p{
-    font-size: 20px; 
-    margin-top: 20px;
-  }
-  
-  .content .btn{
-    margin-top: 30px;
-    padding: 15px 30px;
-    border: none;
-    background-color: black;
-    color: white; 
-    font-size: 20px; 
-    border-radius: 5px; 
-  }
-  
-  
+/* MAIN BODY STARTS */
+
+/* MAIN BODY ENDS */
+
+
+
+/* CSS FOR THE CONTACT US PAGE */
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+} */
+
+.contact {
+  position: relative; 
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
