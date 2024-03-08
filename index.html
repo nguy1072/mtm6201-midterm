@@ -4,60 +4,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="<link rel=" stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />"
+    <title>Bella Onojie Website</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/reset.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <title>Fashion Website</title>
 </head>
 
-<!-- the body starts here -->
-
 <body>
-    <!-- the nav bar starts here -->
-    <nav class="navbar">
-        <!-- the logo -->
-        <div class="logo">
-            <img src="/images/logoandtext.png">
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <img class="header-logo" src="./images/logo.png" alt="Bella Onojie Logo">
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#product">Product</a></li>
+                <li><a href="faq">Faq</a></li>
+                <li><a href="contact">Contact</a></li>
+            </ul>
         </div>
-        <!-- the menu -->
-        <ul class="menu">
-            <li><a href="" class="active">CATALOGUE</a></li>
-            <li><a href="">FASHION</a></li>
-            <li><a href="">FAVOURITE</a></li>
-            <li><a href="">LIFESTYLE</a></li>
-            <button class="navbar-btn">Sign Up</button>
-        </ul>
-    </nav>
-
-    <!-- the banner starts here -->
-    <section class="content">
-        <!-- left columns start here -->
-        <div class="left-column">
-            <div class="top">
-                <h1><span>LET'S</span></h1><br>
-                <h1><span>EXPLORE</span></h1><br>
-                <h1><span>UNIQUE</span></h1><br>
-                <h1><span>CLOTHES.</span></h1><br>
-                <p><span>Live for Influential and Innovative fashion!</span></p><br>
-            </div>
-            <!-- the reactangle in the left side of the Shop Now button -->
-            <div class="bottom">
-                <div class="rectangle">
-                    <img src="/images/rectangle.png">
+    </header>
+    <!-- MAIN BODY -->
+    <main class="main">
+        <div class="container">
+            <section class="hero">
+                <div class="header">
+                    <div class="banner">
+                        <img src="images/banner.png" alt=" Bella Onojie Banner">
+                    </div>
+                    <div class="top">
+                        <p>Food app</p>
+                        <h2>Why stay hungry when you can order form Bella Onojie</h2>
+                        <p>Download the bella onojes food app now on</p>
+                    </div>
+                    <div class="bottom-btn">
+                        <a href="#playstore" class="btn">Playstore</a>
+                        <a href="#appstore" class="btn">App store</a>
+                    </div>
                 </div>
-                <a href="" class="btn">SHOP NOW</a>
-                <!-- right column starts here -->
-                <div class="right-column">
-                    <img src="images/banner.png">
+
+                <img src="images/mobile.png" alt="Food for Everyone">
+                <hr>
+            </section>
+            <!-- HOW APP WORKS -->
+            <section class="how-app-works">
+                <h3>How the app works</h3>
+                <h4>Create an account</h4>
+                <h3>Create/login to an existing account to get started</h3>
+                <p>An account is created with your email and a desired password</p>
+                <div class="loginimage">
+                    <img src="images/login.png" alt="Log in Mobile Image">
                 </div>
-            </div>
-    </section>
-
-
+            </section>
+            <!-- EXPLORE VARIATIES -->
+            <section class="explore">
+                <h4>Explore varieties</h4>
+                <h3>Shop for your favorites meal as e dey hot.</h3>
+                <p>Shop for your favorite meals or drinks and enjoy while doing it.</p>
+                <div class="homeimage">
+                    <img src="images/home.png" alt="Home Mobile Image">
+                </div>
+            </section>
+            <!-- CHECKOUT -->
+            <section class="checkout">
+                <h4>Checkout</h4>
+                <h3>When you done check out and get it delivered.</h3>
+                <p>When you done check out and get it delivered with ease.</p>
+                <div class="checkoutimage">
+                    <img src="images/payment.png" alt="Payment Mobile Image">
+                </div>
+            </section>
+            <!-- DOWNLOAD THE APP NOW -->
+            <section class="bottom">
+                <h3>Download the app now.</h3>
+                <p>Available on your favorite store. Start your premium experience now</p>
+                <a href="#playstore" class="btn">Playstore</a>
+                <a href="#appstore" class="btn">App store</a>
+                <div class="bottomimg">
+                    <img src="images/bottomimg.png" alt="Bottom Cover Image">
+                </div>
+            </section>
+        </div>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; Bella Onojie 2023</p>
+        </div>
+    </footer>
 </body>
+
+</html>
