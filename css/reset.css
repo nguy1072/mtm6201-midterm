@@ -1,4 +1,4 @@
-/* Box sizing rules */
+Box sizing rules
 *,
 *::before,
 *::after {
@@ -58,12 +58,12 @@ body {
 /* A elements that don't have a class get default styles */
 a {
   text-decoration-skip-ink: auto;
-  color: #0070f3;
+  color: #CE3E1B;
 }
 
 a:hover,
 a:focus {
-  color: #0070f3;
+  color: #CE3E1B;
 }
 
 /* Make images easier to work with */
@@ -103,4 +103,4 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
-}
+} 
