@@ -1,117 +1,114 @@
-/* CSS FOR THE CONTACT US PAGE */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-} 
-
-.contact {
-    position: relative; 
-    min-height: 100vh;
-    padding: 50px 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background: url(bg.jpg);
-    background-size: cover; 
-  }
-
-/* style for the content */
-.contact .content {
-    max-width: 800px; 
-    text-align: center;
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    background: #FFE5DF; 
+    font-size: 14px; 
+    font-family: "Poppins", sans-serif; 
+}
+.container {
+    width: 80%; 
+    margin: 50px auto; 
+}
+/* style for the contact-box includes the left and right section  */
+.contact-box{
+    background: #ffffff; 
+    display: flex;  
 }
 
-/* style for the heading */
-.contact .content h2{
-    font-size: 36px; 
-    font-weight: 500; 
-    color: black; 
-}
-/* style for the paragraph */
-.contact .content p{
-    font-weight: 300;
-    color: black; 
+/* style for the left column */
+.contact-left{
+    flex-basis: 60%;
+    padding: 40px 60px; 
 }
 
-.container{
-    width: 100%;
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
-    margin-top: 30px; 
-}
-
-.container .contactInfo{
-    width: 50%;
-    display: flex; 
-    flex-direction: column; 
-}
-
-.container .contactInfo .box{
-    position: relative; 
-    padding: 20px 0;
-    display: flex;
-}
-
-
-.container .contactInfo .box .text{
-    display: flex; 
-    margin-left: 20px; 
-    font-size: 16px;
-    color: black; 
-    flex-direction: column; 
-    font-weight: 300; 
-}
-
-.container .contactInfo .box .text h3{
-    font-weight: 500;
-    color: #E8856D; 
-
-}
-
-/* style for the contact form */
-.contactForm{
-    width: 40%; 
+/* style for the right column */
+.contact-right{
+    flex-basis: 40%;
     padding: 40px; 
-    background: #E8856D;
+    background: #CE3E1B; 
+    color: #ffffff;
 }
 
-.contactForm h2{
-    font-size: 30px; 
-    color: #ffffff; 
-    font-weight: 500; 
+/* add margin-bottom for the Contact with Us  */
+h1{
+    margin-bottom: 10px; 
 }
 
-.contactForm .inputBox{
-    position: relative; 
+.container p{
+    margin-bottom: 40px; 
+}
+.input-row{
+    display: flex; 
+    justify-content: space-between; 
+    margin-bottom: 20px; 
+}
+.input-row .input-group{
+    flex-basis: 45%; 
+}
+input{
     width: 100%; 
-    margin-top: 10px; 
-}
-
-.contactForm .inputBox input,
-.contactForm .inputBox textarea{
-    width: 100%; 
-    padding: 5px 0;
-    font-size: 16px; 
-    margin: 10px 0; 
     border: none; 
-    border-bottom: 2px solid black; 
+    border-bottom: 1px solid #ccc; 
     outline: none; 
-    resize: none;
+    padding-bottom: 5px; 
 }
 
-.contactForm button{
-  background-color: black; 
-  border: none;
-  color: white;
-  padding: 10px 24px;
-  border-radius: 8px; 
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+/* let the box be in the same line with the subject section */
+textarea{
+    width: 100%; 
+    border: 1px solid #ccc; 
+    outline: none; 
+    padding: 10px; 
+    box-sizing: border-box; 
+}
+/* change the color of the label of Name, Phone, Email, Subject and Message  */
+label {
+    margin-bottom: 6px; 
+    display: block; 
+    color: #CE3E1B; 
+}
+/* change style for the CTA btn */
+button{
+    background: #CE3E1B; 
+    width: 100px; 
+    border: none; 
+    outline: none; 
+    color: #fff; 
+    height: 35px; 
+    border-radius: 30px; 
+    margin-top: 20px; 
+    box-shadow: 0px 5px 15px 0px #E3826A; 
+}
+/* add style for the Send Your Resquest  */
+.contact-left h3{
+    color: #CE3E1B; 
+    font-weight: 600; 
+    margin-bottom: 30px; 
+}
+.contact-right h3{
+    font-weight: 600; 
+    margin-bottom: 30px; 
+}
+/* add layout for the content inside Reach Us section */
+tr td:first-child{
+    padding-right: 20px; 
+}
+tr td{
+    padding-top: 20px; 
+}
+
+@media screen and (max-width: 1000px){
+    .contact-box{
+        display: flex; 
+        flex-direction: row; 
+    }
+}
+
+@media screen and (max-width: 768px){
+    .contact-box{
+        display: flex; 
+        flex-direction: column; 
+    }
 }
