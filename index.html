@@ -7,6 +7,8 @@
     <title>Bella Onojie Website</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/reset.css">
+    <a href="#main-content" class="skip-link">Skip To Main Content</a>
+    <a href="#footer" class="skip-link">Skip To Footer</a>
 </head>
 
 <body>
@@ -16,9 +18,9 @@
             <img class="header-logo" src="./images/logo.png" alt="Bella Onojie Logo">
             <ul class="menu">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#product">Product</a></li>
+                <li><a href="product.html">Product</a></li>
                 <li><a href="faq">Faq</a></li>
-                <li><a href="contact">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
     </header>
@@ -26,70 +28,101 @@
     <main class="main">
         <div class="container">
             <section class="hero">
+                <!-- include banner img, <p>, <h2>, btn -->
                 <div class="header">
-                    <div class="banner">
+                    <div class="image-container">
                         <img src="images/banner.png" alt=" Bella Onojie Banner">
                     </div>
-                    <div class="top">
-                        <p>Food app</p>
-                        <h2>Why stay hungry when you can order form Bella Onojie</h2>
-                        <p>Download the bella onojes food app now on</p>
-                    </div>
-                    <div class="bottom-btn">
-                        <a href="#playstore" class="btn">Playstore</a>
-                        <a href="#appstore" class="btn">App store</a>
+                    <div class="put-in-center">
+                        <div class="overlay-text">
+                            <!-- includes text and btn -->
+                            <p>Food app</p>
+                            <h2>Why stay hungry when you can order from Bella Onojie</h2>
+                            <p>Download the bella onojes food app now on</p>
+                            <div class="bottom-btn">
+                                <a href="#playstore" class="btn1">Playstore</a>
+                                <a href="#appstore" class="btn2">App store</a>
+                            </div>
+                        </div>
+                        <img src="images/mobile.png" alt="Food for Everyone">
                     </div>
                 </div>
+        </div>
+        <hr>
+        </section>
 
-                <img src="images/mobile.png" alt="Food for Everyone">
-                <hr>
-            </section>
-            <!-- HOW APP WORKS -->
-            <section class="how-app-works">
-                <h3>How the app works</h3>
-                <h4>Create an account</h4>
-                <h3>Create/login to an existing account to get started</h3>
-                <p>An account is created with your email and a desired password</p>
+        <!-- HOW APP WORKS -->
+        <section class="how-app-works">
+            <h2>How the app works</h2>
+            <div class="content-app-works">
                 <div class="loginimage">
                     <img src="images/login.png" alt="Log in Mobile Image">
                 </div>
-            </section>
-            <!-- EXPLORE VARIATIES -->
-            <section class="explore">
-                <h4>Explore varieties</h4>
-                <h3>Shop for your favorites meal as e dey hot.</h3>
-                <p>Shop for your favorite meals or drinks and enjoy while doing it.</p>
+                <div class="create-an-account">
+                    <h4>Create an account</h4>
+                    <h3>Create/login to an existing account to get started</h3>
+                    <p>An account is created with your email and a desired password</p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- EXPLORE VARIATIES -->
+        <section class="explore">
+            <div class="content-app-works">
+                <div class="shop-your-favorites">
+                    <h4>Explore varieties</h4>
+                    <h3>Shop for your favorites meal as e dey hot.</h3>
+                    <p>Shop for your favorite meals or drinks and enjoy while doing it.</p>
+                </div>
                 <div class="homeimage">
                     <img src="images/home.png" alt="Home Mobile Image">
                 </div>
-            </section>
-            <!-- CHECKOUT -->
-            <section class="checkout">
+            </div>
+        </section>
+
+        <!-- CHECKOUT -->
+        <section class="checkout">
+            <div class="content-app-works"></div>
+            <div class="done-your-checkout">
                 <h4>Checkout</h4>
                 <h3>When you done check out and get it delivered.</h3>
                 <p>When you done check out and get it delivered with ease.</p>
-                <div class="checkoutimage">
-                    <img src="images/payment.png" alt="Payment Mobile Image">
-                </div>
-            </section>
-            <!-- DOWNLOAD THE APP NOW -->
-            <section class="bottom">
-                <h3>Download the app now.</h3>
-                <p>Available on your favorite store. Start your premium experience now</p>
-                <a href="#playstore" class="btn">Playstore</a>
-                <a href="#appstore" class="btn">App store</a>
-                <div class="bottomimg">
-                    <img src="images/bottomimg.png" alt="Bottom Cover Image">
-                </div>
-            </section>
+            </div>
+            <div class="checkoutimage">
+                <img src="images/payment.png" alt="Payment Mobile Image">
+            </div>
+        </section>
         </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer-container">
+                <section class="banner-footer">
+                    <!-- include banner img, <p>, <h2>, btn -->
+                    <div class="inside-footer">
+                        <div class="image-hold">
+                            <img src="./images/footer.png" alt=" Bella Onojie Footer">
+                        </div>
+                        <div class="be-in-center">
+                            <div class="overlay-text-center">
+                                <!-- includes text and btn -->
+                                <h2>Download the app now.</h2>
+                                <p>Available on your favorite store. Start your premium experience now</p>
+                                <div class="bottom-button">
+                                    <a href="#playstore" class="button1">Playstore</a>
+                                    <a href="#appstore" class="button2">App store</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <p>&copy; Bella Onojie 2023</p>
+            </div>
+        </footer>
     </main>
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; Bella Onojie 2023</p>
-        </div>
-    </footer>
 </body>
 
 </html>
