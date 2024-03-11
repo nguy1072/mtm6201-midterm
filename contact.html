@@ -4,64 +4,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us Page</title>
-    <link rel="stylesheet" href="./css/contact.css">
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
-        integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="contact">
-        <div class="content">
-            <h2>Contact Us</h2>
-            <p>Have something you would like to let us know? Whether you have a comment on a recipe or an idea to share,
-                we
-                welcome your feedback.</p>
-        </div>
-        <div class="container">
-            <div class="contactInfo">
-                <div class="box">
-                    <div class="text">
-                        <h3>Address</h3>
-                        <p>1691 Merivale Rd, <br>Nepean, ON <br>K2G 4R2</p>
+    <div class="container" role="main">
+        <h1>Contact With Us</h1>
+        <p>We would love to receive your feedback. 
+            <br>Feel free to get in touch with us.</p>
+        <div class="contact-box">
+            <div class="contact-left" role="region">
+                <h3>Send Your Request</h3>
+                <form role="form">
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Name</label>
+                            <input type="text" placeholder="Jennie Kim">
+                        </div>
+                        <div class="input-group">
+                            <label>Phone</label>
+                            <input type="text" placeholder="+ 1 123 456 7891">
+                        </div>
                     </div>
-                </div>
-                <div class="box">
-                    <div class="text">
-                        <h3>Phone</h3>
-                        <p>(613)-224-7687</p>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Email</label>
+                            <input type="email" placeholder="jenniekim@gmail.com">
+                        </div>
+                        <div class="input-group">
+                            <label>Subject</label>
+                            <input type="text" placeholder="The quality of the food">
+                        </div>
                     </div>
-                </div>
-            <div class="box">
-                <div class="text">
-                    <h3>Email</h3>
-                    <p>BellaOnojie@gmail.com</p>
-                </div>
+
+                    <label>Message</label>
+                    <textarea rows="5" placeholder="Your Message"></textarea>
+
+                    <button type="submit">SEND</button>
+                </form>
+            </div>
+            <div class="contact-right" role="region">
+                <h3>Reach Us</h3>
+
+                <table>
+                    <tr>
+                        <td>Email</td>
+                        <td>bellaolonje@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Phone</td>
+                        <td>+1 613 816 5320</td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td>10 Cleto Avenue<br>
+                            ON K2J 3K6
+                        </td>
+                    </tr>
+                </table>
             </div>
         </div>
     </div>
-    <div class="contactForm">
-        <form>
-            <h2>Send Message</h2>
-            <div class="inputBox">
-                <input type="text" name="" required="required">
-                <span>Full Name</span>
-            </div>
-            <div class="inputBox">
-                <input type="text" name="" required="required">
-                <span>Email</span>
-            </div>
-            <div class="inputBox">
-                <textarea required="required"></textarea><br>
-                <span>Type your Message</span>
-            </div>
-            <div class="button">
-                <button type="button">Send</button>
-            </div>
-        </form>
-    </div>
-    </section>
+
 </body>
 
 </html>
