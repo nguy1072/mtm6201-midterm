@@ -26,6 +26,16 @@ margin-right:5rem;
   font-weight: 400;
 }
 
+/* when hover the menu */
+.header .container .menu a:hover{
+  border: 2px solid #CE3E1B;
+  border-radius: 20px; 
+  background-color: #CE3E1B; 
+  color: white;
+  padding: 5px 10px; 
+  margin: 24px auto;  
+}
+
 .header-logo{
   height: 4.75rem;
 }
@@ -33,26 +43,259 @@ margin-right:5rem;
 /* HEADER ENDS */
 
 /* MAIN BODY STARTS */
+/* make text and button in the center of the banner image  */
+.header .put-in-center{
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay-text{
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  color: #fff; 
+  padding: 10px 20px; 
+  font-size: 20px; 
+  text-align: center;
+}
+
+/* make the button also inside the banner img */
+.header .bottom-btn{
+  display: flex; 
+  flex-direction: row;
+}
+
+/* style for the buttons */
+.bottom-btn .btn1{
+  padding: 5px 10px; 
+  border: none; 
+  outline: none; 
+  background-color: #CE3E1B; 
+  color: white; 
+  cursor: pointer; 
+  border-radius: 20px; 
+  font-size: 20px; 
+  margin: 24px auto; 
+  transition: 0.2s all; 
+  width: 150px; 
+  gap: 10px; 
+}
+.bottom-btn .btn2{
+  padding: 5px 10px; 
+  outline: none; 
+  cursor: pointer; 
+  border-radius: 20px; 
+  font-size: 20px; 
+  margin: 24px auto; 
+  transition: 0.2s all; 
+  width: 150px; 
+  gap: 10px; 
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+}
+/* when hover the buttons */
+.bottom-btn .btn1:hover{
+    background-color: #621603;
+    color: white;
+}
+
+.bottom-btn .btn2:hover{
+  border: none; 
+  background-color: #621603;
+  color: white;
+}
+
+/* HOW THE APPS WORK STARTS */
+/* put the title in the center */
+.how-app-works h2{
+  text-align: center;  
+}
+/* devide content into 2 columns */
+.content-app-works{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; 
+}
+/* change color for the h4 */
+h4{
+  color: #CE3E1B; 
+}
+
+/* create two columns that floats next to each other */
+.content-app-works .loginimage{
+  flex-basis: 75%; 
+  box-sizing: border-box;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.content-app-works .create-an-account{
+  flex-basis: 25%; 
+  box-sizing: border-box;
+  padding: 10px;
+  margin-top: 300px; 
+  margin-bottom: 250px;
+  white-space: nowrap; 
+}
+
+.content-app-works::after {
+  content: "";
+  clear: both; 
+
+/* HOW THE APPS WORK ENDS */
+
+/* EXPLORE VARIETIES STARTS */
+
+/* create two columns that floats next to each other */
+
+.content-app-works .shop-your-favorites{
+  flex-basis: 75%; 
+  box-sizing: border-box;
+  padding: 10px;
+  margin-top: 500px; 
+  margin-bottom: 20px;
+  white-space: nowrap;
+}
+
+.content-app-works .homeimage{
+  flex-basis: 25%; 
+  box-sizing: border-box;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.content-app-works::after{
+  content: "";
+  clear: both;
+}
+/* EXPLORE VARIETIES ENDS */
+
+/* CHECKOUT STARTS */
+
+/* create two columns that floats next to each other */
+.content-app-works .checkoutimage{
+  flex-basis: 75%; 
+  box-sizing: border-box;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.content-app-works .done-your-checkout{
+  flex-basis: 25%; 
+  box-sizing: border-box;
+  padding: 10px;
+  margin-top: 250px; 
+  margin-bottom: 20px;
+  white-space: nowrap; 
+}
+
+.content-app-works::after{
+  content: "";
+  clear: both;
+}
+
+/* CHECKOUT ENDS */
 
 /* MAIN BODY ENDS */
 
+/* FOOTER STARTS */
+/* FOOTER STARTS */
 
+.footer .image-hold img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
-/* CSS FOR THE CONTACT US PAGE */
-/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-} */
+.footer .overlay-text {
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5); 
+}
 
-.contact {
-  position: relative; 
-  min-height: 100vh;
-  padding: 50px 100px;
+.footer .overlay-text .bottom-button {
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  gap: 10px;
+}
+
+
+/* style for the buttons */
+.bottom-button .button1{
+  padding: 5px 10px; 
+  border: none; 
+  outline: none; 
+  background-color: #CE3E1B; 
+  color: white; 
+  cursor: pointer; 
+  border-radius: 20px; 
+  font-size: 20px; 
+  margin: 24px auto; 
+  transition: 0.2s all; 
+  width: 150px; 
+  gap: 10px; 
+}
+.bottom-button .button2{
+  padding: 5px 10px; 
+  outline: none; 
+  cursor: pointer; 
+  border-radius: 20px; 
+  font-size: 20px; 
+  margin: 24px auto; 
+  transition: 0.2s all; 
+  width: 150px; 
+  gap: 10px; 
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+}
+
+/* when hover the buttons */
+.footer .overlay-text .bottom-button .button1:hover {
+  background-color: #621603;
+  color: white;
+}
+
+.footer .overlay-text .bottom-button .button2:hover {
+  border: none;
+  background-color: #621603;
+  color: white;
+}
+/* FOOTER ENDS  */
+
+/* SKIP-LINKS */
+.skip-link {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 10px;
+  background-color: #ddd;
+  color: #621603;
+  font-size: 14px;
+  text-decoration: none;
+  opacity: 0;
+}
+
+.skip-link:focus {
+  opacity: 1;
+  outline: 2px solid #621603;
 }
