@@ -1,301 +1,373 @@
-/* HEADER STARTS */
-
-.header{
-margin-left: 5rem;
-margin-right:5rem;
-}
-
-.header .container{
+/* header */
+.header {
   display: flex;
-  flex-direction: row;
+  align-items: center;
   justify-content: space-between;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-left: 50px;
+  padding-right: 30px;
+}
+.header-logo {
+  width: 200px;
+  height: 100px;
+}
+.icon-menu {
+  display: none;
+}
+.nav {
+  display: flex;
+  gap: 40px;
+}
+.nav-text {
+  transition: border-bottom 0.3s; /* border-bottom transition duration */
+  color: #252b42;
+}
+.nav-text:hover {
+  border-bottom: 2px solid #ce3e1b; /* Border bottom on hover */
+  color: #ce3e1b;
 }
 
-.header .container .menu{
+/* banner */
+.banner {
+  background-image: url(../images/banner.png);
+  height: 600px;
+  background-size: cover;
+  width: 100%;
+}
+.banner-content {
+  width: 70%;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+
+.food-app {
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+}
+.banner-title {
+  color: #fff;
+  font-weight: bold;
+  font-size: 58px;
+  text-align: center;
+}
+.download-text {
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  margin-top: 17px;
+  margin-bottom: 48px;
+}
+.download-buttons {
   display: flex;
-  flex-direction: row;
-  gap: 6rem;
+  gap: 34px;
+  margin: 0 auto;
+  justify-content: center;
+}
+.playstore {
+  width: 220px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fa4a0c;
+  color: #fff;
+  font-weight: 24px;
+  font-weight: bold;
+  border-radius: 30px;
+  border: 1px solid #fa4a0c;
+  cursor: pointer;
+  /* Add animation for font in crease */
+  transition: font-size 0.3s;
+}
+.playstore:hover {
+  background-color: #ce3e1b;
+  border: 1px solid #ce3e1b;
+  font-size: 20px;
+}
+
+.appstore {
+  width: 220px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  color: #fff;
+  font-weight: 24px;
+  font-weight: bold;
+  border-radius: 30px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+.appstore:hover {
+  border-color: #dddddd;
+  color: #dddddd;
+}
+
+/* main content */
+.content {
+  width: 70%;
+  margin: 0 auto;
+}
+.content-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.image-mobile {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: -70px;
+}
+/* how app works */
+.how-app-work-title {
+  font-weight: 600;
+  font-size: 44px;
+  text-align: center;
+  border-bottom: 3px solid #e4e4e4;
+  padding-bottom: 50px;
+  width: 70%;
+  margin: 0 auto;
+}
+/* how app works */
+.how-app-work {
+  h4 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fa4a0c;
+  }
+  h3 {
+    font-size: 40px;
+    font-weight: 700px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    color: #737373;
+  }
+}
+.how-app-works-item-mobile-reverse {
+  display: flex;
   align-items: center;
 }
 
-.header .container .menu a{
-  color: black;
-  font-size: 1.25rem;
-  font-weight: 400;
+.how-app-works-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
 }
 
-/* when hover the menu */
-.header .container .menu a:hover{
-  border: 2px solid #CE3E1B;
-  border-radius: 20px; 
-  background-color: #CE3E1B; 
-  color: white;
-  padding: 5px 10px; 
-  margin: 24px auto;  
-}
-
-.header-logo{
-  height: 4.75rem;
-}
-
-/* HEADER ENDS */
-
-/* MAIN BODY STARTS */
-/* make text and button in the center of the banner image  */
-.header .put-in-center{
-  display: flex; 
-  flex-direction: column; 
-  align-items: center; 
-}
-
-.image-container {
-  position: relative;
-  display: inline-block;
-}
-
-.image-container img{
-  display: block;
+/* footer */
+.footer-download-banner {
+  background-image: url(../images//footer.png);
   width: 100%;
-  height: auto;
-}
-
-.overlay-text{
-  position: absolute;
-  top: 50%; 
-  left: 50%; 
-  transform: translate(-50%, -50%); 
-  color: #fff; 
-  padding: 10px 20px; 
-  font-size: 20px; 
-  text-align: center;
-}
-
-/* make the button also inside the banner img */
-.header .bottom-btn{
-  display: flex; 
-  flex-direction: row;
-}
-
-/* style for the buttons */
-.bottom-btn .btn1{
-  padding: 5px 10px; 
-  border: none; 
-  outline: none; 
-  background-color: #CE3E1B; 
-  color: white; 
-  cursor: pointer; 
-  border-radius: 20px; 
-  font-size: 20px; 
-  margin: 24px auto; 
-  transition: 0.2s all; 
-  width: 150px; 
-  gap: 10px; 
-}
-.bottom-btn .btn2{
-  padding: 5px 10px; 
-  outline: none; 
-  cursor: pointer; 
-  border-radius: 20px; 
-  font-size: 20px; 
-  margin: 24px auto; 
-  transition: 0.2s all; 
-  width: 150px; 
-  gap: 10px; 
-  border: 2px solid white;
-  background-color: transparent;
-  color: white;
-}
-/* when hover the buttons */
-.bottom-btn .btn1:hover{
-    background-color: #621603;
-    color: white;
-}
-
-.bottom-btn .btn2:hover{
-  border: none; 
-  background-color: #621603;
-  color: white;
-}
-
-/* HOW THE APPS WORK STARTS */
-/* put the title in the center */
-.how-app-works h2{
-  text-align: center;  
-}
-/* devide content into 2 columns */
-.content-app-works{
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
+  height: 516px;
+  background-size: cover;
   display: flex;
-  justify-content: space-between; 
-}
-/* change color for the h4 */
-h4{
-  color: #CE3E1B; 
-}
-
-/* create two columns that floats next to each other */
-.content-app-works .loginimage{
-  flex-basis: 75%; 
-  box-sizing: border-box;
-  padding: 10px;
-  margin-bottom: 20px;
-}
-
-.content-app-works .create-an-account{
-  flex-basis: 25%; 
-  box-sizing: border-box;
-  padding: 10px;
-  margin-top: 300px; 
-  margin-bottom: 250px;
-  white-space: nowrap; 
-}
-
-.content-app-works::after {
-  content: "";
-  clear: both; 
-
-/* HOW THE APPS WORK ENDS */
-
-/* EXPLORE VARIETIES STARTS */
-
-/* create two columns that floats next to each other */
-
-.content-app-works .shop-your-favorites{
-  flex-basis: 75%; 
-  box-sizing: border-box;
-  padding: 10px;
-  margin-top: 500px; 
-  margin-bottom: 20px;
-  white-space: nowrap;
-}
-
-.content-app-works .homeimage{
-  flex-basis: 25%; 
-  box-sizing: border-box;
-  padding: 10px;
-  margin-bottom: 20px;
-}
-
-.content-app-works::after{
-  content: "";
-  clear: both;
-}
-/* EXPLORE VARIETIES ENDS */
-
-/* CHECKOUT STARTS */
-
-/* create two columns that floats next to each other */
-.content-app-works .checkoutimage{
-  flex-basis: 75%; 
-  box-sizing: border-box;
-  padding: 10px;
-  margin-bottom: 20px;
-}
-
-.content-app-works .done-your-checkout{
-  flex-basis: 25%; 
-  box-sizing: border-box;
-  padding: 10px;
-  margin-top: 250px; 
-  margin-bottom: 20px;
-  white-space: nowrap; 
-}
-
-.content-app-works::after{
-  content: "";
-  clear: both;
-}
-
-/* CHECKOUT ENDS */
-
-/* MAIN BODY ENDS */
-
-/* FOOTER STARTS */
-/* FOOTER STARTS */
-
-.footer .image-hold img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.footer .overlay-text {
-  color: #fff;
-  padding: 10px 20px;
-  font-size: 20px;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.5); 
-}
-
-.footer .overlay-text .bottom-button {
-  display: flex;
-  flex-direction: row;
   justify-content: center;
-  gap: 10px;
+  align-items: center;
+  text-align: center;
 }
 
+.footer-download-banner-content {
+  width: 70%;
+  margin: 0 auto;
 
-/* style for the buttons */
-.bottom-button .button1{
-  padding: 5px 10px; 
-  border: none; 
-  outline: none; 
-  background-color: #CE3E1B; 
-  color: white; 
-  cursor: pointer; 
-  border-radius: 20px; 
-  font-size: 20px; 
-  margin: 24px auto; 
-  transition: 0.2s all; 
-  width: 150px; 
-  gap: 10px; 
-}
-.bottom-button .button2{
-  padding: 5px 10px; 
-  outline: none; 
-  cursor: pointer; 
-  border-radius: 20px; 
-  font-size: 20px; 
-  margin: 24px auto; 
-  transition: 0.2s all; 
-  width: 150px; 
-  gap: 10px; 
-  border: 2px solid white;
-  background-color: transparent;
-  color: white;
+  h2 {
+    font-weight: 700;
+    font-size: 40px;
+    color: #fff;
+  }
 }
 
-/* when hover the buttons */
-.footer .overlay-text .bottom-button .button1:hover {
-  background-color: #621603;
-  color: white;
+.available {
+  font-size: 24px;
+  color: #fff;
+  margin-top: 10;
+  margin-bottom: 60px;
+}
+.calendars {
+  display: none;
 }
 
-.footer .overlay-text .bottom-button .button2:hover {
-  border: none;
-  background-color: #621603;
-  color: white;
-}
-/* FOOTER ENDS  */
-
-/* SKIP-LINKS */
-.skip-link {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  padding: 10px;
-  background-color: #ddd;
-  color: #621603;
-  font-size: 14px;
-  text-decoration: none;
-  opacity: 0;
+.bottom-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
 }
 
-.skip-link:focus {
-  opacity: 1;
-  outline: 2px solid #621603;
+.button-playstore {
+  background-color: #fa4a0c;
+  color: #fff;
+  border-radius: 10px;
+  padding: 18px 30px;
+}
+.button-playstore:hover {
+  background-color: #ce3e1b;
+  color: #fff;
+}
+
+.button-appstore {
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 10px;
+  padding: 18px 30px;
+}
+.button-appstore:hover {
+  border-color: #dddddd;
+  color: #dddddd;
+}
+.button-try-free {
+  display: none;
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 60px;
+
+  ul {
+    display: flex;
+    gap: 8px;
+
+    li {
+      list-style: none;
+
+      img {
+        width: 40px;
+      }
+    }
+  }
+
+  p {
+    color: #5c5c5c;
+    font-size: 12px;
+  }
+}
+
+/* Mobile and smaller */
+@media (max-width: 768px) {
+  /* header mobile */
+  .header {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  /* update size for logo */
+  .header-logo {
+    width: 100px;
+    height: 50px;
+  }
+  .image-mobile {
+    width: 80%;
+    margin-top: 0px;
+  }
+  /* show menu icon for mobile */
+  .icon-menu {
+    display: block;
+  }
+  /* hide nav text for mobile */
+  .nav {
+    display: none;
+  }
+
+  /* Style banner for mobile */
+  .banner {
+    background-image: none;
+    height: auto;
+  }
+  .banner-content {
+    width: 100%;
+  }
+  .banner-title {
+    color: #252b42;
+    font-size: 36px;
+  }
+  .footer-download {
+    width: calc(100%-60px);
+    left: 30px;
+  }
+  .download-text {
+    color: #737373;
+  }
+  .download-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  .appstore {
+    border-color: #fa4a0c;
+    color: #fa4a0c;
+  }
+
+  /* content for mobile, set width full */
+  .content {
+    width: 100%;
+    padding: 0 30px;
+  }
+
+  .how-app-works-item-mobile-reverse {
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .how-app-work-title {
+    border-bottom: 3px solid #e4e4e4;
+    padding-bottom: 50px;
+    border-top: none;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* set verticle */
+  .how-app-works-item {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  /* footer banner */
+  .footer-download-banner {
+    background-image: none;
+    background-color: #252b42;
+  }
+  .calendars {
+    font-size: 24px;
+    color: #fff;
+    margin-top: 10;
+    margin-bottom: 60px;
+    display: block;
+  }
+  .available {
+    display: none;
+  }
+  .button-appstore {
+    display: none;
+  }
+  .button-try-free {
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 10px;
+    padding: 18px 30px;
+    display: block;
+  }
+
+  .copyright {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    ul {
+      margin-left: -40px;
+    }
+
+    p {
+      text-align: center;
+    }
+  }
+  /* hide logo */
+  .copyright-logo {
+    display: none;
+  }
 }
